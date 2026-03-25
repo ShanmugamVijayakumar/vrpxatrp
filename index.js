@@ -164,7 +164,7 @@ client.once("ready", async () => {
     
     client.user.setPresence({
         activities: [{ name: "VRPxATRP Data", type: ActivityType.Watching }],
-        status: "online"
+        status: "dnd"
     });
 
     // Start the player count update loop
