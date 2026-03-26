@@ -196,13 +196,13 @@ client.once("ready", async () => {
         const formattedTime = joinDate.toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata' });
 
         ctx.textAlign = 'center';
-
+       Canvas.registerFont('./fonts/Etna.ttf', { family: 'Etna' });
         ctx.fillStyle = '#d90166'; // Pink
-        ctx.font = '30px Arial';
+        ctx.font = '30px Etna';
         ctx.fillText(`${member.user.username}`, 1180, 255);
 
         ctx.fillStyle = '#ffffff'; // White
-        ctx.font = 'bold 25px Arial';
+        ctx.font = 'bold 25px Etna';
         ctx.fillText(`${formattedDate}`, 135, 260);
         ctx.fillText(`${formattedDate}`, 1050, 410);
 
@@ -482,14 +482,14 @@ if (commandName === "changenick") {
     ctx.drawImage(avatar, 35, 50, 161, 169);
     ctx.restore();
 
-    
-    ctx.font = "bold 20px 'times new roman'";
+    Canvas.registerFont('./fonts/Etna.ttf', { family: 'Etna' });
+    ctx.font = "bold 20px 'Etna'";
     ctx.fillStyle = "#022135";
     ctx.fillText(charName, 264, 84);
     ctx.fillText(passportId, 308, 109);
     ctx.fillText(dateOfEntry, 328, 131);
     ctx.fillText(issuedBy, 295, 204);
-    ctx.font = "20px 'times new roman'";
+    ctx.font = "20px 'Etna'";
     //ctx.fillText("Visa Validity: TILL NEXT PHASE", 310, 520);
     //ctx.fillText("No Of Entries: SINGLE", 310, 550);
 
